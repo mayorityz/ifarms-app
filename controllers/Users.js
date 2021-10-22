@@ -117,6 +117,7 @@ exports.verifyUser = async (req, res) => {
       { verificationId: id, isVerified: false },
       { isVerified: true },
     )
+    console.log(update_)
     if (update_ === null) throw 'Invalid Verification Process!'
     else res.send('ok!')
   } catch (error) {
