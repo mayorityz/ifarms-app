@@ -117,7 +117,7 @@ exports.verifyUser = async (req, res) => {
       { verificationId: id, isVerified: false },
       { isVerified: true },
     )
-    res.send('ok!')
+    res.send('ok')
   } catch (error) {
     res.send(`${error}`)
   }
