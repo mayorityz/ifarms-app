@@ -1,0 +1,44 @@
+{
+  "name": "ifarm-backend",
+  "version": "1.0.0",
+  "description": "backend in NodeJs for iFarm",
+  "main": "app.js",
+  "author": "mayority",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "14.17.6",
+    "yarn": "1.22.15"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^7.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cloudinary": "^1.21.0",
+    "connect-mongodb-session": "^2.3.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "emailjs-com": "^3.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.7",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.10",
+    "paystack": "^2.0.1",
+    "uuid": "^7.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-strongloop": "^2.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "nodemon": "^2.0.3"
+  },
+  "eslintConfig": {
+    "extends": "es6"
+  }
+}
