@@ -27,8 +27,10 @@ exports.allProducts = (req, res, next) => {
   const { skip } = req.body
   const p = Product.displayAll(skip || 0)
   p.then((res_) => {
+    console.log(res_)
     res.json(res_)
   }).catch((err) => {
+    console.log('err : ', err)
     res.status(500).json({ err })
   })
 }
